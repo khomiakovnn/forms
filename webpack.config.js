@@ -20,5 +20,10 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'docs'),
+    },
+    port: 3000,
+  },
 };
-
